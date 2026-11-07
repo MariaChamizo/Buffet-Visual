@@ -1,0 +1,115 @@
+/* Portada: escenario de letras */
+.welcome-page {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  min-height: 100svh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: $blanco;
+  color: $negro;
+}
+
+.welcome-stage {
+  position: relative;
+  min-height: 100svh;
+  isolation: isolate;
+}
+
+.welcome-title {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  display: flex;
+  margin: 0;
+  font-size: clamp(32px, min(5.2vw, 9svh), 120px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  gap: 0.6em;
+  pointer-events: none;
+}
+
+.welcome-word {
+  display: flex;
+}
+
+.welcome-letter {
+  display: inline-block;
+}
+
+/* La entrada permanece disponible durante toda la animación. */
+.welcome-enter {
+  position: absolute;
+  z-index: 1;
+  top: 44%;
+  left: 50%;
+  padding: 0 4px;
+  border: 1px solid $negro;
+  background: $blanco;
+  font-size: clamp(11px, 1.2vw, 19px);
+  line-height: 1.45;
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+
+.welcome-enter:hover {
+  color: $blanco;
+  background: $negro;
+  text-decoration: none;
+}
+
+.welcome-enter:focus-visible {
+  outline: 2px solid $negro;
+  outline-offset: 5px;
+}
+
+/* Preguntas de entrada */
+.welcome-questions {
+  position: absolute;
+  right: 24px;
+  bottom: 6%;
+  left: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(18px, 2.5vw, 48px);
+}
+
+.welcome-questions p {
+  width: max-content;
+  margin: 0;
+  padding: 0 4px;
+  font-size: clamp(9px, 0.78vw, 14px);
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+/* Ordenadores compactos y ventanas de poca altura. */
+@media (max-width: 1200px) {
+  .welcome-questions {
+    gap: 20px;
+  }
+
+  .welcome-questions p {
+    font-size: 9px;
+  }
+}
+
+@media (max-height: 650px) and (min-width: 761px) {
+  .welcome-title {
+    top: 30%;
+    font-size: min(5.2vw, 11vh);
+  }
+
+  .welcome-enter {
+    top: 44%;
+  }
+
+  .welcome-questions {
+    bottom: 5%;
+  }
+}

@@ -1,0 +1,97 @@
+/* Aviso para móviles, tablets y ventanas que no admiten la vista de ordenador. */
+.device-notice {
+  position: fixed;
+  z-index: 20;
+  inset: 0;
+  display: none;
+  flex-direction: column;
+  padding: clamp(24px, 6vw, 64px);
+  overflow: auto;
+  background: $blanco;
+  color: $negro;
+}
+
+.device-message {
+  width: min(100%, 560px);
+  margin: auto;
+  padding: 40px 0;
+  border-top: 1px solid $negro;
+  border-bottom: 1px solid $negro;
+  text-align: center;
+}
+
+.device-message h1 {
+  margin: 28px 0;
+  font-size: clamp(28px, 5.2vw, 40px);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+}
+
+.device-message > p {
+  max-width: 42ch;
+  margin: 20px auto 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.device-message > .eyebrow {
+  margin: 0;
+  font-size: 11px;
+}
+
+.device-message > .device-signoff {
+  margin-top: 32px;
+  font-size: 9px;
+}
+
+.device-window-hint {
+  display: none;
+}
+
+html.is-mobile-device body {
+  overflow: hidden;
+}
+
+html.is-mobile-device body > :not(.device-notice) {
+  display: none !important;
+}
+
+html.is-mobile-device .device-notice {
+  display: flex;
+}
+
+@media (max-width: 767px), (any-hover: none) and (any-pointer: coarse) {
+  body {
+    overflow: hidden;
+  }
+
+  body > :not(.device-notice) {
+    display: none !important;
+  }
+
+  .device-notice {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) and (any-hover: hover) and (any-pointer: fine) {
+  html:not(.is-mobile-device) .device-window-hint {
+    display: block;
+  }
+}
+
+@media (max-height: 480px) {
+  .device-notice {
+    padding: 16px 24px;
+  }
+
+  .device-message {
+    padding: 20px 0;
+  }
+
+  .device-message h1 {
+    margin: 20px 0;
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buffet Visual · Tus sesiones</title>
+  <link rel="stylesheet" href="gestion.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="#contenido" aria-label="Buffet Visual, inicio">
+      <span>BUFFET VISUAL</span>
+    </a>
+    <nav aria-label="Navegación de las opciones">
+      <a href="#acciones">TUS ARCHIVOS ↙</a>
+      <a href="#sesiones">TU HISTORIAL</a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" aria-labelledby="titulo">
+      <figure class="hero-plate">
+        <img src="assets/backgrounds/acido.png" alt="Limón dibujado con caracteres ASCII">
+        <figcaption>TUS DATOS,<br>OTRA MIRADA.</figcaption>
+      </figure>
+      <div class="hero-copy">
+        <p class="eyebrow">OPCIONES DE BUFFET VISUAL</p>
+        <h1 id="titulo">TUS<br>SESIONES</h1>
+        <p class="hero-description">
+          Cada comida deja un plato.<br>Vuelve a servirlo cuando quieras.
+        </p>
+        <p class="hero-detail">
+          Recupera tu último menú, reúne tus sesiones o guarda una copia de tus datos.
+        </p>
+      </div>
+    </section>
+
+    <div class="workspace">
+      <section class="action-section" id="acciones" aria-labelledby="acciones-titulo">
+        <p class="eyebrow">01 / TUS ARCHIVOS</p>
+        <h2 id="acciones-titulo">¿Qué quieres<br>volver a servir?</h2>
+        <div class="actions" role="group" aria-label="Gestionar sesiones">
+          <button class="action-row" id="last" type="button" disabled>
+            <span class="action-copy">
+              <span class="action-title">Servir última sesión</span>
+              <span class="action-detail">Descarga de nuevo el plato más reciente.</span>
+            </span>
+            <span class="action-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="action-row" id="html" type="button" disabled>
+            <span class="action-copy">
+              <span class="action-title">Servir historial</span>
+              <span class="action-detail">Reúne tus sesiones en un solo archivo HTML.</span>
+            </span>
+            <span class="action-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="action-row" id="json" type="button" disabled>
+            <span class="action-copy">
+              <span class="action-title">Guardar datos JSON</span>
+              <span class="action-detail">Conserva una copia de tu actividad registrada.</span>
+            </span>
+            <span class="action-arrow" aria-hidden="true">↓</span>
+          </button>
+          <button class="action-row" id="clear" type="button" disabled>
+            <span class="action-copy">
+              <span class="action-title">Limpiar historial</span>
+              <span class="action-detail">Elimina las sesiones guardadas en este navegador.</span>
+            </span>
+            <span class="action-arrow" aria-hidden="true">×</span>
+          </button>
+        </div>
+        <p id="message" class="message" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="session-summary" id="sesiones" aria-labelledby="sesiones-titulo">
+        <p class="eyebrow">02 / TU HISTORIAL</p>
+        <h2 id="sesiones-titulo">Tu mesa<br>sigue aquí.</h2>
+        <div class="session-status">
+          <p id="history">Consultando las sesiones...</p>
+          <p id="active"></p>
+          <p id="latest" class="note"></p>
+        </div>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <p>Para empezar o terminar de comer, vuelve a la tarjeta de la extensión.</p>
+      <p class="note">
+        Tus datos se quedan en este navegador.
+        Limpiar el historial conserva los archivos descargados.
+      </p>
+    </footer>
+  </main>
+  <script src="gestion.js"></script>
+</body>
+</html>

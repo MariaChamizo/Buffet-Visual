@@ -1,0 +1,611 @@
+{
+  "version": 2,
+  "note": "Edita los hashtags de cada sabor. Cada id identifica un recurso preparado de la extensión.",
+  "hashtags": {
+    "salado": [
+      "#humor",
+      "#meme",
+      "#risas",
+      "#comedia",
+      "#random",
+      "#parati",
+      "#lol",
+      "#broma",
+      "#gracioso",
+      "#chisme",
+      "#lmao",
+      "#divertido",
+      "#flamenco",
+      "#pizza",
+      "#burger",
+      "#tapas",
+      "#queso",
+      "#picoteo",
+      "#patatasfritas",
+      "#snacks",
+      "#recetasfaciles",
+      "#hamburguesa",
+      "#pizzalover"
+    ],
+    "dulce": [
+      "#coquette",
+      "#cute",
+      "#kawaii",
+      "#goals",
+      "#softaesthetic",
+      "#parejas",
+      "#goodvibes",
+      "#loveislove",
+      "#wholesome",
+      "#tartas",
+      "#postres",
+      "#chocolate",
+      "#decoraunatarta",
+      "#reposteria",
+      "#pasteleria",
+      "#cookies",
+      "#bakery",
+      "#helado",
+      "#cupcakes",
+      "#aesthetic",
+      "#chuches"
+    ],
+    "amargo": [
+      "#mood",
+      "#darkaesthetic",
+      "#realidad",
+      "#desamor",
+      "#sinfiltros",
+      "#melancolia",
+      "#frasestristes",
+      "#crudo",
+      "#noticias",
+      "#actualidad",
+      "#parati",
+      "#cafe",
+      "#coffeelover",
+      "#cafedeespecialidad",
+      "#matcha",
+      "#cacao",
+      "#espresso",
+      "#darkchocolate",
+      "#cervezaartesanal",
+      "#coffeetime"
+    ],
+    "acido": [
+      "#sarcasmo",
+      "#basado",
+      "#ironia",
+      "#humortiktok",
+      "#zasca",
+      "#polemica",
+      "#funa",
+      "#humoracido",
+      "#limon",
+      "#ceviche",
+      "#kombucha",
+      "#citricos",
+      "#encurtidos",
+      "#vinagreta",
+      "#limonada",
+      "#humor",
+      "#humornegro"
+    ],
+    "umami": [
+      "#arttok",
+      "#reflexion",
+      "#filosofia",
+      "#inspiracion",
+      "#crecimientopersonal",
+      "#cultura",
+      "#aesthetic",
+      "#sushi",
+      "#ramen",
+      "#sushilover",
+      "#foodie",
+      "#gourmet",
+      "#comidaasiatica",
+      "#fermentos",
+      "#gastronomia",
+      "#asianfood",
+      "#comidasaludable"
+    ]
+  },
+  "media": [
+    {
+      "id": "acido-01",
+      "taste": "acido",
+      "kind": "video",
+      "src": "assets/media/acido-01.mp4",
+      "poster": "assets/media/acido-01.poster.jpg",
+      "title": "Bocado acido 01"
+    },
+    {
+      "id": "acido-02",
+      "taste": "acido",
+      "kind": "video",
+      "src": "assets/media/acido-02.mp4",
+      "poster": "assets/media/acido-02.poster.jpg",
+      "title": "Bocado acido 02"
+    },
+    {
+      "id": "acido-03",
+      "taste": "acido",
+      "kind": "video",
+      "src": "assets/media/acido-03.mp4",
+      "poster": "assets/media/acido-03.poster.jpg",
+      "title": "Bocado acido 03"
+    },
+    {
+      "id": "acido-04",
+      "taste": "acido",
+      "kind": "video",
+      "src": "assets/media/acido-04.mp4",
+      "poster": "assets/media/acido-04.poster.jpg",
+      "title": "Bocado acido 04"
+    },
+    {
+      "id": "acido-05",
+      "taste": "acido",
+      "kind": "video",
+      "src": "assets/media/acido-05.mp4",
+      "poster": "assets/media/acido-05.poster.jpg",
+      "title": "Bocado acido 05"
+    },
+    {
+      "id": "acido-06",
+      "taste": "acido",
+      "kind": "video",
+      "src": "assets/media/acido-06.mp4",
+      "poster": "assets/media/acido-06.poster.jpg",
+      "title": "Bocado acido 06"
+    },
+    {
+      "id": "acido-07",
+      "taste": "acido",
+      "kind": "video",
+      "src": "assets/media/acido-07.mp4",
+      "poster": "assets/media/acido-07.poster.jpg",
+      "title": "Bocado acido 07"
+    },
+    {
+      "id": "acido-08",
+      "taste": "acido",
+      "kind": "image",
+      "src": "assets/media/acido-08.jpg",
+      "title": "Bocado acido 08"
+    },
+    {
+      "id": "acido-09",
+      "taste": "acido",
+      "kind": "image",
+      "src": "assets/media/acido-09.jpg",
+      "title": "Bocado acido 09"
+    },
+    {
+      "id": "acido-10",
+      "taste": "acido",
+      "kind": "video",
+      "src": "assets/media/acido-10.mp4",
+      "poster": "assets/media/acido-10.poster.jpg",
+      "title": "Bocado acido 10"
+    },
+    {
+      "id": "amargo-01",
+      "taste": "amargo",
+      "kind": "video",
+      "src": "assets/media/amargo-01.mp4",
+      "poster": "assets/media/amargo-01.poster.jpg",
+      "title": "Bocado amargo 01"
+    },
+    {
+      "id": "amargo-02",
+      "taste": "amargo",
+      "kind": "video",
+      "src": "assets/media/amargo-02.mp4",
+      "poster": "assets/media/amargo-02.poster.jpg",
+      "title": "Bocado amargo 02"
+    },
+    {
+      "id": "amargo-03",
+      "taste": "amargo",
+      "kind": "video",
+      "src": "assets/media/amargo-03.mp4",
+      "poster": "assets/media/amargo-03.poster.jpg",
+      "title": "Bocado amargo 03"
+    },
+    {
+      "id": "amargo-04",
+      "taste": "amargo",
+      "kind": "video",
+      "src": "assets/media/amargo-04.mp4",
+      "poster": "assets/media/amargo-04.poster.jpg",
+      "title": "Bocado amargo 04"
+    },
+    {
+      "id": "amargo-05",
+      "taste": "amargo",
+      "kind": "video",
+      "src": "assets/media/amargo-05.mp4",
+      "poster": "assets/media/amargo-05.poster.jpg",
+      "title": "Bocado amargo 05"
+    },
+    {
+      "id": "amargo-06",
+      "taste": "amargo",
+      "kind": "video",
+      "src": "assets/media/amargo-06.mp4",
+      "poster": "assets/media/amargo-06.poster.jpg",
+      "title": "Bocado amargo 06"
+    },
+    {
+      "id": "amargo-07",
+      "taste": "amargo",
+      "kind": "video",
+      "src": "assets/media/amargo-07.mp4",
+      "poster": "assets/media/amargo-07.poster.jpg",
+      "title": "Bocado amargo 07"
+    },
+    {
+      "id": "amargo-08",
+      "taste": "amargo",
+      "kind": "video",
+      "src": "assets/media/amargo-08.mp4",
+      "poster": "assets/media/amargo-08.poster.jpg",
+      "title": "Bocado amargo 08"
+    },
+    {
+      "id": "amargo-09",
+      "taste": "amargo",
+      "kind": "image",
+      "src": "assets/media/amargo-09.jpg",
+      "title": "Bocado amargo 09"
+    },
+    {
+      "id": "amargo-10",
+      "taste": "amargo",
+      "kind": "image",
+      "src": "assets/media/amargo-10.jpg",
+      "title": "Bocado amargo 10"
+    },
+    {
+      "id": "dulce-01",
+      "taste": "dulce",
+      "kind": "video",
+      "src": "assets/media/dulce-01.mp4",
+      "poster": "assets/media/dulce-01.poster.jpg",
+      "title": "Bocado dulce 01"
+    },
+    {
+      "id": "dulce-02",
+      "taste": "dulce",
+      "kind": "video",
+      "src": "assets/media/dulce-02.mp4",
+      "poster": "assets/media/dulce-02.poster.jpg",
+      "title": "Bocado dulce 02"
+    },
+    {
+      "id": "dulce-03",
+      "taste": "dulce",
+      "kind": "video",
+      "src": "assets/media/dulce-03.mp4",
+      "poster": "assets/media/dulce-03.poster.jpg",
+      "title": "Bocado dulce 03"
+    },
+    {
+      "id": "dulce-04",
+      "taste": "dulce",
+      "kind": "video",
+      "src": "assets/media/dulce-04.mp4",
+      "poster": "assets/media/dulce-04.poster.jpg",
+      "title": "Bocado dulce 04"
+    },
+    {
+      "id": "dulce-05",
+      "taste": "dulce",
+      "kind": "video",
+      "src": "assets/media/dulce-05.mp4",
+      "poster": "assets/media/dulce-05.poster.jpg",
+      "title": "Bocado dulce 05"
+    },
+    {
+      "id": "dulce-06",
+      "taste": "dulce",
+      "kind": "video",
+      "src": "assets/media/dulce-06.mp4",
+      "poster": "assets/media/dulce-06.poster.jpg",
+      "title": "Bocado dulce 06"
+    },
+    {
+      "id": "dulce-07",
+      "taste": "dulce",
+      "kind": "video",
+      "src": "assets/media/dulce-07.mp4",
+      "poster": "assets/media/dulce-07.poster.jpg",
+      "title": "Bocado dulce 07"
+    },
+    {
+      "id": "dulce-08",
+      "taste": "dulce",
+      "kind": "video",
+      "src": "assets/media/dulce-08.mp4",
+      "poster": "assets/media/dulce-08.poster.jpg",
+      "title": "Bocado dulce 08"
+    },
+    {
+      "id": "dulce-09",
+      "taste": "dulce",
+      "kind": "video",
+      "src": "assets/media/dulce-09.mp4",
+      "poster": "assets/media/dulce-09.poster.jpg",
+      "title": "Bocado dulce 09"
+    },
+    {
+      "id": "dulce-10",
+      "taste": "dulce",
+      "kind": "video",
+      "src": "assets/media/dulce-10.mp4",
+      "poster": "assets/media/dulce-10.poster.jpg",
+      "title": "Bocado dulce 10"
+    },
+    {
+      "id": "dulce-11",
+      "taste": "dulce",
+      "kind": "video",
+      "src": "assets/media/dulce-11.mp4",
+      "poster": "assets/media/dulce-11.poster.jpg",
+      "title": "Bocado dulce 11"
+    },
+    {
+      "id": "dulce-12",
+      "taste": "dulce",
+      "kind": "video",
+      "src": "assets/media/dulce-12.mp4",
+      "poster": "assets/media/dulce-12.poster.jpg",
+      "title": "Bocado dulce 12"
+    },
+    {
+      "id": "dulce-13",
+      "taste": "dulce",
+      "kind": "video",
+      "src": "assets/media/dulce-13.mp4",
+      "poster": "assets/media/dulce-13.poster.jpg",
+      "title": "Bocado dulce 13"
+    },
+    {
+      "id": "dulce-14",
+      "taste": "dulce",
+      "kind": "video",
+      "src": "assets/media/dulce-14.mp4",
+      "poster": "assets/media/dulce-14.poster.jpg",
+      "title": "Bocado dulce 14"
+    },
+    {
+      "id": "dulce-15",
+      "taste": "dulce",
+      "kind": "video",
+      "src": "assets/media/dulce-15.mp4",
+      "poster": "assets/media/dulce-15.poster.jpg",
+      "title": "Bocado dulce 15"
+    },
+    {
+      "id": "dulce-16",
+      "taste": "dulce",
+      "kind": "video",
+      "src": "assets/media/dulce-16.mp4",
+      "poster": "assets/media/dulce-16.poster.jpg",
+      "title": "Bocado dulce 16"
+    },
+    {
+      "id": "dulce-17",
+      "taste": "dulce",
+      "kind": "video",
+      "src": "assets/media/dulce-17.mp4",
+      "poster": "assets/media/dulce-17.poster.jpg",
+      "title": "Bocado dulce 17"
+    },
+    {
+      "id": "salado-01",
+      "taste": "salado",
+      "kind": "video",
+      "src": "assets/media/salado-01.mp4",
+      "poster": "assets/media/salado-01.poster.jpg",
+      "title": "Bocado salado 01"
+    },
+    {
+      "id": "salado-02",
+      "taste": "salado",
+      "kind": "video",
+      "src": "assets/media/salado-02.mp4",
+      "poster": "assets/media/salado-02.poster.jpg",
+      "title": "Bocado salado 02"
+    },
+    {
+      "id": "salado-03",
+      "taste": "salado",
+      "kind": "video",
+      "src": "assets/media/salado-03.mp4",
+      "poster": "assets/media/salado-03.poster.jpg",
+      "title": "Bocado salado 03"
+    },
+    {
+      "id": "salado-04",
+      "taste": "salado",
+      "kind": "video",
+      "src": "assets/media/salado-04.mp4",
+      "poster": "assets/media/salado-04.poster.jpg",
+      "title": "Bocado salado 04"
+    },
+    {
+      "id": "salado-05",
+      "taste": "salado",
+      "kind": "video",
+      "src": "assets/media/salado-05.mp4",
+      "poster": "assets/media/salado-05.poster.jpg",
+      "title": "Bocado salado 05"
+    },
+    {
+      "id": "salado-06",
+      "taste": "salado",
+      "kind": "video",
+      "src": "assets/media/salado-06.mp4",
+      "poster": "assets/media/salado-06.poster.jpg",
+      "title": "Bocado salado 06"
+    },
+    {
+      "id": "salado-07",
+      "taste": "salado",
+      "kind": "video",
+      "src": "assets/media/salado-07.mp4",
+      "poster": "assets/media/salado-07.poster.jpg",
+      "title": "Bocado salado 07"
+    },
+    {
+      "id": "salado-08",
+      "taste": "salado",
+      "kind": "video",
+      "src": "assets/media/salado-08.mp4",
+      "poster": "assets/media/salado-08.poster.jpg",
+      "title": "Bocado salado 08"
+    },
+    {
+      "id": "salado-09",
+      "taste": "salado",
+      "kind": "video",
+      "src": "assets/media/salado-09.mp4",
+      "poster": "assets/media/salado-09.poster.jpg",
+      "title": "Bocado salado 09"
+    },
+    {
+      "id": "salado-10",
+      "taste": "salado",
+      "kind": "video",
+      "src": "assets/media/salado-10.mp4",
+      "poster": "assets/media/salado-10.poster.jpg",
+      "title": "Bocado salado 10"
+    },
+    {
+      "id": "salado-11",
+      "taste": "salado",
+      "kind": "video",
+      "src": "assets/media/salado-11.mp4",
+      "poster": "assets/media/salado-11.poster.jpg",
+      "title": "Bocado salado 11"
+    },
+    {
+      "id": "salado-12",
+      "taste": "salado",
+      "kind": "video",
+      "src": "assets/media/salado-12.mp4",
+      "poster": "assets/media/salado-12.poster.jpg",
+      "title": "Bocado salado 12"
+    },
+    {
+      "id": "salado-13",
+      "taste": "salado",
+      "kind": "image",
+      "src": "assets/media/salado-13.jpg",
+      "title": "Bocado salado 13"
+    },
+    {
+      "id": "salado-14",
+      "taste": "salado",
+      "kind": "image",
+      "src": "assets/media/salado-14.jpg",
+      "title": "Bocado salado 14"
+    },
+    {
+      "id": "umami-01",
+      "taste": "umami",
+      "kind": "video",
+      "src": "assets/media/umami-01.mp4",
+      "poster": "assets/media/umami-01.poster.jpg",
+      "title": "Bocado umami 01"
+    },
+    {
+      "id": "umami-02",
+      "taste": "umami",
+      "kind": "video",
+      "src": "assets/media/umami-02.mp4",
+      "poster": "assets/media/umami-02.poster.jpg",
+      "title": "Bocado umami 02"
+    },
+    {
+      "id": "umami-03",
+      "taste": "umami",
+      "kind": "video",
+      "src": "assets/media/umami-03.mp4",
+      "poster": "assets/media/umami-03.poster.jpg",
+      "title": "Bocado umami 03"
+    },
+    {
+      "id": "umami-04",
+      "taste": "umami",
+      "kind": "video",
+      "src": "assets/media/umami-04.mp4",
+      "poster": "assets/media/umami-04.poster.jpg",
+      "title": "Bocado umami 04"
+    },
+    {
+      "id": "umami-05",
+      "taste": "umami",
+      "kind": "video",
+      "src": "assets/media/umami-05.mp4",
+      "poster": "assets/media/umami-05.poster.jpg",
+      "title": "Bocado umami 05"
+    },
+    {
+      "id": "umami-06",
+      "taste": "umami",
+      "kind": "video",
+      "src": "assets/media/umami-06.mp4",
+      "poster": "assets/media/umami-06.poster.jpg",
+      "title": "Bocado umami 06"
+    },
+    {
+      "id": "umami-07",
+      "taste": "umami",
+      "kind": "video",
+      "src": "assets/media/umami-07.mp4",
+      "poster": "assets/media/umami-07.poster.jpg",
+      "title": "Bocado umami 07"
+    },
+    {
+      "id": "umami-08",
+      "taste": "umami",
+      "kind": "video",
+      "src": "assets/media/umami-08.mp4",
+      "poster": "assets/media/umami-08.poster.jpg",
+      "title": "Bocado umami 08"
+    },
+    {
+      "id": "umami-09",
+      "taste": "umami",
+      "kind": "image",
+      "src": "assets/media/umami-09.jpg",
+      "title": "Bocado umami 09"
+    }
+  ],
+  "backgrounds": [
+    {
+      "taste": "salado",
+      "src": "assets/backgrounds/salado.png"
+    },
+    {
+      "taste": "dulce",
+      "src": "assets/backgrounds/dulce.png"
+    },
+    {
+      "taste": "amargo",
+      "src": "assets/backgrounds/amargo.png"
+    },
+    {
+      "taste": "acido",
+      "src": "assets/backgrounds/acido.png"
+    },
+    {
+      "taste": "umami",
+      "src": "assets/backgrounds/umami.png"
+    }
+  ]
+}

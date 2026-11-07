@@ -1,0 +1,48 @@
+/* Pantallas más pequeñas y accesibilidad */
+@media (min-width: 1680px) {
+  body {
+    padding-right: 72px;
+    padding-left: 72px;
+  }
+}
+
+@media (max-width: 900px) {
+  .site-header {
+    min-height: 82px;
+  }
+
+  .site-header nav {
+    gap: 22px;
+    font-size: 9px;
+  }
+
+  .hero {
+    min-height: 670px;
+    grid-template-columns: minmax(0, 1.15fr) minmax(240px, 1fr);
+    gap: 32px;
+  }
+
+  .section {
+    padding: 70px 0;
+    column-gap: 40px;
+  }
+
+  .flavour-row {
+    grid-template-columns: 20px minmax(0, 1fr);
+    gap: 6px 13px;
+  }
+
+  .flavour-row p {
+    grid-column: 2;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+
+  [data-typewriter].is-writing .typewriter-text::after {
+    animation: none;
+  }
+}

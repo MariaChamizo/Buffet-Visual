@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buffet Visual</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="card" aria-label="Buffet Visual">
+    <p id="story" class="story"></p>
+
+    <button id="continue" class="continue" type="button"
+      aria-label="Continuar" aria-describedby="story" hidden></button>
+
+    <button id="start" class="start" type="button" hidden>
+      PULSA AQUÍ PARA EMPEZAR
+    </button>
+
+    <div id="finish" class="finish" hidden>
+      <p class="pause" aria-hidden="true">...</p>
+      <div class="answers" aria-label="¿Ha terminado de comer?">
+        <button id="yes" type="button">sí</button>
+        <button id="no" type="button">no</button>
+      </div>
+    </div>
+
+    <span id="announcement" class="sr-only" role="status"></span>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

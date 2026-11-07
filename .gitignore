@@ -1,0 +1,16 @@
+# Historial y archivos personales: se conservan solo en este ordenador.
+/datos/
+/historial/
+/informes/
+/archivo/
+
+# Compilaciones, descargas y comprobaciones locales.
+/.preview/
+/landing/descargas/*.zip
+node_modules/
+*.log
+
+# Archivos del sistema.
+.DS_Store
+Thumbs.db
+Desktop.ini

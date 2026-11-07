@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Buffet Visual",
+  "version": "3.9.0",
+  "minimum_chrome_version": "116",
+  "description": "Un menú gastronómico de lo que miras mientras comes.",
+  "options_page": "gestion.html",
+  "permissions": ["storage", "downloads", "tabs", "offscreen"],
+  "icons": {
+    "16": "assets/icons/bv-16.png",
+    "32": "assets/icons/bv-32.png",
+    "48": "assets/icons/bv-48.png",
+    "128": "assets/icons/bv-128.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Buffet Visual",
+    "default_icon": {
+      "16": "assets/icons/bv-16.png",
+      "32": "assets/icons/bv-32.png",
+      "48": "assets/icons/bv-48.png",
+      "128": "assets/icons/bv-128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*", "https://*.twitch.tv/*"],
+      "js": ["shared.js", "content.js"],
+      "all_frames": true,
+      "match_about_blank": true,
+      "run_at": "document_start"
+    }
+  ]
+}

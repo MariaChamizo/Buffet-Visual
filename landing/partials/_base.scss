@@ -1,0 +1,83 @@
+/* Tipografía y base */
+@font-face {
+  font-family: $fuente-nombre;
+  src: url($fuente-archivo) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+  font-family: $fuente-principal;
+  font-synthesis: none;
+  color: $texto;
+  background: $blanco;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 4.3vw;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+body,
+button,
+input,
+code {
+  font-family: $fuente-principal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+a:focus-visible,
+summary:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 6px;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  color: $blanco;
+  background: $texto;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 10;
+  top: 12px;
+  left: 20px;
+  padding: 10px 14px;
+  background: $blanco;
+  transform: translateY(-160%);
+}
+
+.skip-link:focus {
+  transform: none;
+}

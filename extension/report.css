@@ -1,0 +1,453 @@
+/* Mesa y tipografía */
+:root {
+  color-scheme: light;
+  font-family: 'Kode Mono', monospace;
+  font-synthesis: none;
+  background: #fff;
+  color: #080808;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body,
+button,
+table {
+  font-family: 'Kode Mono', monospace;
+}
+
+button {
+  color: inherit;
+}
+
+button:focus-visible,
+summary:focus-visible,
+a:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 5px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+#plato,
+.capa-fondos,
+.capa-bocados,
+.capa-frases {
+  position: fixed;
+  inset: 0;
+}
+
+/* Cada plano responde con suavidad al movimiento del ratón. */
+.capa-fondos,
+.capa-bocados,
+.capa-frases {
+  transform: translate3d(var(--parallax-x, 0px), var(--parallax-y, 0px), 0);
+}
+
+.explorando .capa-bocados {
+  z-index: 5;
+}
+
+#plato {
+  isolation: isolate;
+}
+
+.capa-fondos {
+  z-index: 0;
+  pointer-events: none;
+}
+
+.fondo-ascii {
+  position: absolute;
+  width: 24vw;
+  height: auto;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  user-select: none;
+}
+
+.capa-bocados {
+  z-index: 2;
+}
+
+.capa-frases {
+  z-index: 3;
+  pointer-events: none;
+}
+
+.plato-vacio {
+  position: absolute;
+  top: 46%;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* Los errores de compatibilidad deben verse, nunca dejar una página vacía. */
+.aviso-informe {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 70;
+  max-width: min(420px, calc(100vw - 32px));
+  margin: 0;
+  padding: 12px;
+  border: 1px solid #111;
+  background: #fff;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* Bocados pequeños y detalle al detenerse */
+.bocado {
+  position: absolute;
+  left: -180px;
+  z-index: 1;
+  width: var(--thumb-width);
+  height: var(--thumb-height);
+  padding: 0;
+  border: 0;
+  margin: 0;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  will-change: transform;
+}
+
+.bocado-card {
+  position: absolute;
+  inset: 0 auto auto 0;
+  display: block;
+  width: var(--thumb-width);
+  line-height: 0;
+  background: #fff;
+}
+
+.bocado-canvas {
+  display: block;
+  width: var(--thumb-width);
+  height: var(--thumb-height);
+  object-fit: cover;
+  image-rendering: pixelated;
+}
+
+.bocado-detalle,
+.bocado-caption {
+  display: none;
+}
+
+.bocado.is-expanded {
+  z-index: 40;
+}
+
+.bocado.is-expanded .bocado-card {
+  width: var(--detail-width, 480px);
+  max-height: calc(100vh - 36px);
+  overflow: auto;
+  border: 1px solid #161616;
+  transform: translate(var(--detail-x, 0px), var(--detail-y, 0px));
+}
+
+.bocado.is-expanded .bocado-canvas {
+  display: none;
+}
+
+.bocado.is-expanded .bocado-detalle {
+  display: block;
+  width: 100%;
+  height: var(--detail-media-height, auto);
+  max-height: min(62vh, 460px);
+  margin: 0;
+  object-fit: contain;
+  background: #fff;
+}
+
+.bocado.is-expanded .bocado-caption {
+  display: block;
+  padding: 14px 12px;
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+.bocado-descripcion {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 10px;
+  gap: 4px 8px;
+}
+
+.hashtag {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.frase {
+  position: absolute;
+  left: -390px;
+  width: max-content;
+  max-width: 310px;
+  margin: 0;
+  overflow: visible;
+  font-size: 10px;
+  line-height: 1.45;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+/* La cuenta */
+.contenido-registrado {
+  /* Compatibilidad con informes servidos por una plantilla anterior. */
+  display: none !important;
+}
+
+.pedir-cuenta {
+  position: fixed;
+  right: 22px;
+  bottom: 13px;
+  z-index: 60;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-size: clamp(16px, 1.9vw, 25px);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  cursor: pointer;
+}
+
+.control-sonido,
+.activar-sonido {
+  position: fixed;
+  left: 22px;
+  bottom: 18px;
+  z-index: 60;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-size: 12px;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.cuenta {
+  width: 402px;
+  height: min(725px, calc(100vh - 60px));
+  max-width: calc(100vw - 36px);
+  max-height: calc(100vh - 60px);
+  padding: 0;
+  border: 0;
+  margin: auto;
+  overflow: auto;
+  background: #fff;
+  color: #080808;
+}
+
+.cuenta::backdrop {
+  background: rgb(0 0 0 / 18%);
+}
+
+.ticket {
+  position: relative;
+  min-height: min(725px, calc(100vh - 60px));
+  padding: 81px 48px 44px;
+  outline: none;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.cerrar-cuenta {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-size: 18px;
+  line-height: 1;
+  opacity: 0.35;
+  cursor: pointer;
+}
+
+.cerrar-cuenta:hover,
+.cerrar-cuenta:focus-visible {
+  opacity: 1;
+}
+
+.ticket-cabecera {
+  text-align: center;
+}
+
+.ticket-cabecera h1 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: -0.04em;
+  font-weight: 500;
+}
+
+.ticket-cabecera p {
+  margin: 2px 0 0;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.ticket-fecha {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 103px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.ticket-lineas {
+  width: 100%;
+  margin-top: 40px;
+  border-collapse: collapse;
+  font-size: 11px;
+  line-height: 1.35;
+  font-variant-numeric: tabular-nums;
+}
+
+.ticket-lineas th,
+.ticket-lineas td {
+  padding: 5px 0;
+  font-weight: 400;
+  vertical-align: top;
+}
+
+.ticket-lineas th {
+  width: 47%;
+  padding-right: 10px;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.ticket-lineas td {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.ticket-lineas td:last-child {
+  padding-left: 16px;
+}
+
+.ticket-lineas tbody tr:last-child td {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #111;
+}
+
+.ticket-texto {
+  max-width: 235px;
+  margin: 30px 0;
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.ticket-total {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 12px 18px;
+  margin-top: 29px;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.ticket-total strong {
+  font-weight: 500;
+}
+
+.ticket-total span {
+  white-space: nowrap;
+}
+
+.ticket-nota {
+  margin: 32px 0 0;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+/* Lectores de pantalla, movimiento reducido y papel */
+.solo-lectores {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .ticket {
+    padding: 60px 30px 35px;
+  }
+
+  .ticket-fecha {
+    margin-top: 65px;
+  }
+
+  .ticket-lineas {
+    margin-top: 30px;
+  }
+
+  .pedir-cuenta {
+    right: 15px;
+    bottom: 14px;
+  }
+
+}
+
+@media print {
+  html,
+  body {
+    height: auto;
+    overflow: visible;
+    background: #fff;
+  }
+
+  #plato,
+  .pedir-cuenta,
+  .control-sonido,
+  .activar-sonido,
+  .cerrar-cuenta {
+    display: none !important;
+  }
+
+  .cuenta,
+  .cuenta:not([open]) {
+    position: static;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+  }
+
+  .ticket {
+    min-height: 0;
+    padding: 20px;
+  }
+
+  .ticket-fecha {
+    margin-top: 65px;
+  }
+}
